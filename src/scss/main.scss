@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+
+@import './components/header';
+@import './components/nav';
+@import './components/burger';
+@import './components/hero';
+
+@import './components/about';
+@import './components/social';
+@import './components/projects';
+@import './components/project-card';
+@import './components/skills';
+
+@import './components/footer';
+

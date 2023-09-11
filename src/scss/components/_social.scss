@@ -1,0 +1,36 @@
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    transition: color .3s ease-in-out;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: var(--text-color);
+      transition: fill .3s ease-in-out;
+
+      .tg path {
+        fill: var(--text-reverse-color);
+      }
+      .tg .plan {
+        fill: var(--text-color);
+        fill: red;
+      }
+    }
+
+    &:hover svg {
+      fill: var(--accent-color);
+    }
+  }
+}

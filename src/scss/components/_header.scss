@@ -1,0 +1,91 @@
+.header {
+  height: var(--header-height);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--light-grey-color);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    color: var(--text-color);
+    transition: color .3s ease-in-out;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      color: var(--active-color);
+
+      svg {
+        fill: var(--active-color);
+      }
+    }
+
+    svg {
+      fill: var(--accent-color);
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+  @media (max-width: 768px) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--main-bg-color);
+    z-index: 10;
+  }
+
+  @media (max-width: 768px) {
+    &__logo {
+      font-size: 18px;
+    }
+  }
+}
+
+.change-theme__btn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--text-color);
+
+  svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+  }
+  #sun {
+    fill: var(--text-color);
+
+    &:hover {
+      fill: var(--accent-color);
+    }
+  }
+
+  #moon {
+    stroke: var(--text-color);
+    fill: transparent;
+
+    &:hover {
+      stroke: var(--accent-color);
+    }
+  }
+
+  @media (max-width: 768px) {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

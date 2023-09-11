@@ -1,0 +1,14 @@
+:root {
+  --font-family: "Graphik LCG", sans-serif;
+  --content-width: 1600px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --header-height: 110px;
+
+  --text-reverse-color: #f4f4f4;
+
+  @media (max-width: 768px) {
+    --header-height: 60px;
+  }
+}
+
