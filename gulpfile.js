@@ -33,7 +33,6 @@ const plumber = require('gulp-plumber');
 const path = require('path');
 const zip = require('gulp-zip');
 const rootFolder = path.basename(path.resolve());
-const gulp = require('gulp');
 const ghPages = require('gulp-gh-pages');
 
 // paths
@@ -318,10 +317,15 @@ const toProd = (done) => {
   done();
 };
 
-gulp.task('deploy', function() {
-  return gulp.src('./app/**/*')
-    .pipe(ghPages());
-});
+// gulp.task('deploy', function() {
+//   return gulp.src('./app/**/*')
+//     .pipe(ghPages());
+// });
+// const gulp = require('gulp');
+// const toDeploy = () =>{
+//   return gulp.src(`${buildFolder}/**/*`)
+//     .pipe(ghPages());
+// }
 
 exports.default = series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watchFiles);
 
