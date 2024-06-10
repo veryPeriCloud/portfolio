@@ -157,6 +157,10 @@
     &__title-anim {
       min-width: unset;
     }
+
+    &__scroll {
+      display: none;
+    }
   }
 
   @media (max-width: 600px) {
@@ -166,10 +170,6 @@
 
     &__link {
       font-size: 16px;
-    }
-
-    &__mouse {
-      height: 30px;
     }
   }
 
